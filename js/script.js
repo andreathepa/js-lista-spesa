@@ -8,11 +8,11 @@ let lista = [
     'pesce',
     'piselli',
     'sugo'
-]
+];
 
 //collegamento al div in cui deve apparire in html
 
-let shop_list = document.getElementById('shop')
+let shop_list = document.getElementById('shop');
 
 //creazione del ciclo
 
@@ -24,7 +24,7 @@ for(let i=0; i<lista.length; i++){
 
     //list item è uguale a una serie di li contenenti gli elementi dell'array
 
-    let list_item = `<li>${item}</li>`
+    let list_item = `<li>${item}</li>`;
 
 
     //infine shop_list si collega con innerhtml a list item, il segno += consente che venga stampata la sequenza
@@ -42,14 +42,14 @@ let lista_due = [
     'seppie',
     'ceci',
     'pesto'
-]
+];
 
-let cena = document.getElementById('shop-due')
+let cena = document.getElementById('shop-due');
 
 let a=0;
 
   while (a<lista_due.length){
-      a++;
+      
 
       let item_due = lista_due[a];
 
@@ -57,6 +57,8 @@ let a=0;
       let list_itemdue = `<li>${item_due}</li>`;
 
       cena.innerHTML += list_itemdue;
+
+      a++;
 
  }
 
